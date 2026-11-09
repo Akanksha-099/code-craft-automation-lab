@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_The_Big_Ugly_Website_Homepage_0_document_0_phone.png",
-        "test": "../bitmaps_test/20261102-045126/backstop_default_The_Big_Ugly_Website_Homepage_0_document_0_phone.png",
+        "test": "../bitmaps_test/20261109-050049/backstop_default_The_Big_Ugly_Website_Homepage_0_document_0_phone.png",
         "selector": "document",
         "fileName": "backstop_default_The_Big_Ugly_Website_Homepage_0_document_0_phone.png",
         "label": "The Big Ugly Website Homepage",
@@ -28,7 +28,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/backstop_default_The_Big_Ugly_Website_Homepage_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20261102-045126/backstop_default_The_Big_Ugly_Website_Homepage_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20261109-050049/backstop_default_The_Big_Ugly_Website_Homepage_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "backstop_default_The_Big_Ugly_Website_Homepage_0_document_1_tablet.png",
         "label": "The Big Ugly Website Homepage",
