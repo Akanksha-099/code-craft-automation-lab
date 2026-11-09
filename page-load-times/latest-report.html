@@ -26,27 +26,27 @@
   
     <tr>
       <td><a href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a></td>
-      <td>0.93 seconds</td>
+      <td>0.42 seconds</td>
     </tr>
   
     <tr>
       <td><a href="https://webaim.org/" target="_blank">https://webaim.org/</a></td>
-      <td>0.92 seconds</td>
+      <td>0.54 seconds</td>
     </tr>
   
     <tr>
       <td><a href="https://dequeuniversity.com/" target="_blank">https://dequeuniversity.com/</a></td>
-      <td>1.26 seconds</td>
+      <td>1.43 seconds</td>
     </tr>
   
     <tr>
       <td><a href="https://developer.mozilla.org/en-US/" target="_blank">https://developer.mozilla.org/en-US/</a></td>
-      <td>0.19 seconds</td>
+      <td>0.21 seconds</td>
     </tr>
   
     <tr>
       <td><a href="https://alistapart.com/" target="_blank">https://alistapart.com/</a></td>
-      <td>0.54 seconds</td>
+      <td>0.39 seconds</td>
     </tr>
   
     <tr>
@@ -55,7 +55,7 @@
     </tr>
   
       </table>
-      <h2>Average Load Time: 0.85 seconds</h2>
+      <h2>Average Load Time: 0.71 seconds</h2>
       <canvas id="loadTimeChart" class="chart"></canvas>
       <script>
         const ctx = document.getElementById('loadTimeChart').getContext('2d');
@@ -65,7 +65,7 @@
             labels: ["https://www.foo.software","https://www.w3.org/WAI/","https://webaim.org/","https://dequeuniversity.com/","https://developer.mozilla.org/en-US/","https://alistapart.com/","https://www.mckinsey.com/"],
             datasets: [{
               label: 'Load Time (seconds)',
-              data: [1.2481559770000001,0.9336164210000006,0.9193813650000002,1.2599728450000003,0.19410974700000042,0.5411441339999983,0], // Handle failed URLs with 0
+              data: [1.254004905,0.4215195720000002,0.5430900420000002,1.4292944290000005,0.20773145999999998,0.39401910599999973,0], // Handle failed URLs with 0
               backgroundColor: 'rgba(75, 192, 192, 0.2)',
               borderColor: 'rgba(75, 192, 192, 1)',
               borderWidth: 1
