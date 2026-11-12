@@ -18,8 +18,8 @@ export let options = {
   thresholds: {
     http_req_duration: ['p(95)<500'], // Set a performance threshold for 95th percentile response time
     'Errors': ['count<100'],
-    // Gauge: returned content must be smaller than 4000 bytes
-    'ContentSize': ['value<4000'],
+    // Gauge: the K6 demo page should remain smaller than 10000 bytes
+    'ContentSize': ['value<10000'],
     // Rate: content must be OK more than 95 times
     'ContentOK': ['rate>0.95'],
     // Trend: Percentiles, averages, medians, and minimums
@@ -31,13 +31,13 @@ export let options = {
 
 export default function () {
   group('Homepage', function () {
-    let response = http.get('https://reqres.in/api/users?page=2'); // Replace with the URL of your homepage
-    // Add additional assertions or actions with the homepage response if needed
-  const contentOK = response.json('page')===2;
-  TrendRTT.add(response.timings.duration);
-  RateContentOK.add(contentOK);
-  GaugeContentSize.add(response.body.length);
-  CounterErrors.add(!contentOK);
+    const response = http.get('https://quickpizza.grafana.com/test.k6.io/');
+    const contentOK = response.status === 200 && response.body.includes('test.k6.io');
+
+    TrendRTT.add(response.timings.duration);
+    RateContentOK.add(contentOK);
+    GaugeContentSize.add(response.body.length);
+    CounterErrors.add(!contentOK);
   
   });
 
